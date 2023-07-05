@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="LTG <= 4.783\nsquared_error = 5986.946\nsamples = 309\nvalue = 154.929", fillcolor="#f5cfb3"] ;
+1 [label="BMI <= 27.25\nsquared_error = 3707.967\nsamples = 180\nvalue = 119.572", fillcolor="#fae6d8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="HDL <= 55.5\nsquared_error = 2409.359\nsamples = 136\nvalue = 102.654", fillcolor="#fcf1e9"] ;
+1 -> 2 ;
+3 [label="squared_error = 2864.512\nsamples = 78\nvalue = 118.115", fillcolor="#fae7d9"] ;
+2 -> 3 ;
+4 [label="squared_error = 1043.464\nsamples = 58\nvalue = 81.862", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="CHOLESTEROL <= 185.5\nsquared_error = 4102.8\nsamples = 44\nvalue = 171.864", fillcolor="#f3c4a2"] ;
+1 -> 5 ;
+6 [label="squared_error = 3923.007\nsamples = 27\nvalue = 150.741", fillcolor="#f6d2b8"] ;
+5 -> 6 ;
+7 [label="squared_error = 2554.242\nsamples = 17\nvalue = 205.412", fillcolor="#eeae7f"] ;
+5 -> 7 ;
+8 [label="BP <= 111.5\nsquared_error = 4988.69\nsamples = 129\nvalue = 204.264", fillcolor="#eeae80"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="BMI <= 24.3\nsquared_error = 4975.628\nsamples = 100\nvalue = 188.45", fillcolor="#f1b991"] ;
+8 -> 9 ;
+10 [label="squared_error = 2730.592\nsamples = 13\nvalue = 115.846", fillcolor="#fae9dc"] ;
+9 -> 10 ;
+11 [label="squared_error = 4405.727\nsamples = 87\nvalue = 199.299", fillcolor="#efb285"] ;
+9 -> 11 ;
+12 [label="HDL <= 41.5\nsquared_error = 1197.957\nsamples = 29\nvalue = 258.793", fillcolor="#e78a48"] ;
+8 -> 12 ;
+13 [label="squared_error = 650.746\nsamples = 13\nvalue = 273.154", fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label="squared_error = 1338.859\nsamples = 16\nvalue = 247.125", fillcolor="#e99254"] ;
+12 -> 14 ;
+}
